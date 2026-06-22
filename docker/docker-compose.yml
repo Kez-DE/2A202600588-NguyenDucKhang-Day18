@@ -60,6 +60,7 @@ services:
       - |
         set -e
         echo ">> Installing Python deps (cached after first run)…"
+        mkdir -p /tmp/ivy
         pip install --quiet --user \
           pyspark==3.5.0 \
           delta-spark==3.2.0 \
